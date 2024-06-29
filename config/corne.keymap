@@ -155,12 +155,21 @@
             >;
         };
 
-        peek {
+        left_peek {
             bindings = <
 &trans  &super_1  &super_2   &super_3   &super_4   &super_5    &trans  &trans    &trans    &trans    &trans   &kp DELETE
 &trans  &trans    &kp TILDE  &kp MINUS  &kp EQUAL  &trans      &trans  &kp LBKT  &kp RBKT  &kp BSLH  &kp SQT  &trans
 &trans  &trans    &trans     &copy      &paste     &trans      &trans  &trans    &trans    &trans    &trans   &trans
                              &trans     &trans     &trans      &trans  &trans    &trans
+            >;
+        };
+
+        right_peek {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans     &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans
+                        &trans  &trans  &trans    &trans  &trans    &trans
             >;
         };
     };
