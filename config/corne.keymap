@@ -3,12 +3,62 @@
  *
  * SPDX-License-Identifier: MIT
  */
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    macros {
+        super_1: super_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_GUI &kp NUMBER_1>;
+            label = "SUPER_1";
+        };
+
+        super_2: super_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_GUI &kp NUMBER_2>;
+            label = "SUPER_2";
+        };
+
+        super_3: super_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_GUI &kp NUMBER_3>;
+            label = "SUPER_3";
+        };
+
+        super_4: super_4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_GUI &kp NUMBER_4>;
+            label = "SUPER_4";
+        };
+
+        super_5: super_5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_GUI &kp N5>;
+            label = "SUPER_5";
+        };
+
+        copy: copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &kp C>;
+            label = "COPY";
+        };
+
+        paste: paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &kp V>;
+            label = "PASTE";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -39,10 +89,10 @@
 
         arrows {
             bindings = <
-&trans  &trans            &trans          &trans        &trans        &trans    &trans  &trans    &trans     &trans     &trans     &trans
-&to 0   &trans            &trans          &trans        &trans        &trans    &trans  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
-&trans  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_GUI  &trans    &trans  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans
-                                          &trans        &trans        &trans    &trans  &tog 3    &trans
+&trans  &trans            &trans    &trans     &trans        &trans    &trans  &trans    &trans     &trans     &trans     &trans
+&to 0   &trans            &trans    &trans     &trans        &trans    &trans  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
+&trans  &kp LEFT_CONTROL  &kp LALT  &kp LSHFT  &kp LEFT_GUI  &trans    &trans  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans
+                                    &trans     &trans        &trans    &trans  &tog 3    &trans
             >;
         };
 
@@ -55,12 +105,12 @@
             >;
         };
 
-        symbols {
+        peek {
             bindings = <
-&trans  &trans  &trans     &trans     &trans     &trans    &trans  &trans    &trans    &trans    &trans   &kp DELETE
-&trans  &trans  &kp TILDE  &kp MINUS  &kp EQUAL  &trans    &trans  &kp LBKT  &kp RBKT  &kp BSLH  &kp SQT  &trans
-&trans  &trans  &trans     &trans     &trans     &trans    &trans  &trans    &trans    &trans    &trans   &trans
-                           &trans     &trans     &trans    &trans  &trans    &trans
+&trans  &super_1  &super_2   &super_3   &super_4   &super_5    &trans  &trans    &trans    &trans    &trans   &kp DELETE
+&trans  &trans    &kp TILDE  &kp MINUS  &kp EQUAL  &trans      &trans  &kp LBKT  &kp RBKT  &kp BSLH  &kp SQT  &trans
+&trans  &trans    &trans     &copy      &paste     &trans      &trans  &trans    &trans    &trans    &trans   &trans
+                             &trans     &trans     &trans      &trans  &trans    &trans
             >;
         };
     };
