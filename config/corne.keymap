@@ -109,6 +109,19 @@
         };
     };
 
+    behaviors {
+        peek_toggle_layer: peek_toggle_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "PEEK_TOGGLE_LAYER";
+            bindings = <&mo>, <&to>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "hold-preferred";
+            hold-while-undecided;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -121,10 +134,10 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E  &kp R         &kp T          &kp Y              &kp U  &kp I         &kp O    &kp P     &kp BSPC
-&kp ESCAPE      &kp A  &kp S  &kp D  &kp F         &kp G          &kp H              &kp J  &kp K         &kp L    &kp SEMI  &kp ENTER
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C  &kp V         &kp B          &kp N              &kp M  &kp COMMA     &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                              &none  &kp LEFT_ALT  &lt 4 SPACE    &kp RIGHT_CONTROL  &to 1  &kp LEFT_GUI
+&kp TAB         &kp Q  &kp W  &kp E  &kp R         &kp T          &kp Y              &kp U                   &kp I         &kp O    &kp P     &kp BSPC
+&kp ESCAPE      &kp A  &kp S  &kp D  &kp F         &kp G          &kp H              &kp J                   &kp K         &kp L    &kp SEMI  &kp ENTER
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C  &kp V         &kp B          &kp N              &kp M                   &kp COMMA     &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+                              &none  &kp LEFT_ALT  &lt 4 SPACE    &kp RIGHT_CONTROL  &peek_toggle_layer 5 1  &kp LEFT_GUI
             >;
         };
 
