@@ -224,7 +224,7 @@
 
         layer_select {
             bindings = <
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &to 8    &none  &none  &none  &none  &none  &none
 &to 0  &none  &none  &none  &none  &to 7    &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &to 6    &none  &none  &none  &none  &none  &none
                      &none  &none  &none    &none  &to 0  &none
@@ -253,6 +253,16 @@
             >;
 
             label = "gaming";
+        };
+
+        gaming2 {
+            label = "gaming2";
+            bindings = <
+&kp TAB    &kp GRAVE         &kp Q  &kp W  &kp E         &kp R          &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESC    &kp G             &kp A  &kp S  &kp D         &kp F          &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHFT  &kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V          &trans  &trans  &trans  &trans  &trans  &trans
+                                    &none  &kp LEFT_ALT  &lt 8 SPACE    &trans  &to 0   &trans
+            >;
         };
 
         wasd_arrows {
