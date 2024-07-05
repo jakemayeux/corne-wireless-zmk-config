@@ -249,7 +249,7 @@
 &kp TAB    &kp GRAVE         &kp Q  &kp W  &kp E           &kp R        &trans  &trans  &trans  &trans  &trans  &trans
 &kp ESC    &kp G             &kp A  &kp S  &kp D           &kp F        &trans  &trans  &trans  &trans  &trans  &trans
 &kp LSHFT  &kp LEFT_CONTROL  &kp Z  &kp X  &kp C           &kp V        &trans  &trans  &trans  &trans  &trans  &trans
-                                    &none  &lt 8 LEFT_ALT  &kp SPACE    &trans  &to 0   &trans
+                                    &none  &lt 9 LEFT_ALT  &kp SPACE    &trans  &to 0   &trans
             >;
 
             label = "gaming";
@@ -261,7 +261,7 @@
 &kp TAB    &kp GRAVE         &kp Q  &kp W  &kp E         &kp R          &trans  &trans  &trans  &trans  &trans  &trans
 &kp ESC    &kp G             &kp A  &kp S  &kp D         &kp F          &trans  &trans  &trans  &trans  &trans  &trans
 &kp LSHFT  &kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V          &trans  &trans  &trans  &trans  &trans  &trans
-                                    &none  &kp LEFT_ALT  &lt 8 SPACE    &trans  &to 0   &trans
+                                    &none  &kp LEFT_ALT  &lt 9 SPACE    &trans  &to 0   &trans
             >;
         };
 
