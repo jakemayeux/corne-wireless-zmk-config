@@ -202,7 +202,7 @@
 
         numbers {
             bindings = <
-&trans  &super_1  &super_2   &super_3   &super_4   &super_5    &trans  &trans    &trans    &trans    &trans   &kp DELETE
+&trans  &super_1  &super_2   &super_3   &super_4   &super_5    &trans  &trans    &trans    &trans    &trans   &trans
 &trans  &kp N1    &kp N2     &kp N3     &kp N4     &kp N5      &kp N6  &kp N7    &kp N8    &kp N9    &kp N0   &trans
 &trans  &mo 4     &kp GRAVE  &kp MINUS  &kp EQUAL  &trans      &trans  &kp LBKT  &kp RBKT  &kp BSLH  &kp SQT  &trans
                              &trans     &trans     &trans      &trans  &trans    &trans
@@ -213,10 +213,10 @@
 
         copy_paste {
             bindings = <
-&trans  &trans  &trans   &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans   &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &ctrl_a  &copy   &paste  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans   &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans   &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &ctrl_a  &copy   &paste  &kp LEFT_GUI    &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans  &trans  &trans          &trans  &trans  &trans
             >;
 
             label = "copy_paste";
