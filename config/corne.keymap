@@ -157,12 +157,6 @@
             bindings = <&to 4>;
             key-positions = <24 35>;
         };
-
-        lgui_combo {
-            bindings = <&kp LEFT_GUI>;
-            key-positions = <38>;
-            layers = <0>;
-        };
     };
 
     keymap {
