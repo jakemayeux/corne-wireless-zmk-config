@@ -154,8 +154,14 @@
         compatible = "zmk,combos";
 
         layer_select_combo {
-            bindings = <&to 5>;
+            bindings = <&to 4>;
             key-positions = <24 35>;
+        };
+
+        lgui_combo {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <38>;
+            layers = <0>;
         };
     };
 
@@ -202,31 +208,20 @@
 
         numbers {
             bindings = <
-&trans  &super_1  &super_2   &super_3   &super_4   &super_5    &trans  &trans    &trans    &trans    &trans   &trans
-&trans  &kp N1    &kp N2     &kp N3     &kp N4     &kp N5      &kp N6  &kp N7    &kp N8    &kp N9    &kp N0   &trans
-&trans  &mo 4     &kp GRAVE  &kp MINUS  &kp EQUAL  &trans      &trans  &kp LBKT  &kp RBKT  &kp BSLH  &kp SQT  &trans
-                             &trans     &trans     &trans      &trans  &trans    &trans
+&trans  &super_1  &super_2   &super_3   &super_4   &super_5        &kp LBKT  &kp RBKT  &kp GRAVE  &kp MINUS  &kp EQUAL  &trans
+&trans  &kp N1    &kp N2     &kp N3     &kp N4     &kp N5          &kp N6    &kp N7    &kp N8     &kp N9     &kp N0     &trans
+&trans  &trans    &kp GRAVE  &kp MINUS  &kp EQUAL  &kp LEFT_GUI    &trans    &kp LBKT  &kp RBKT   &kp BSLH   &kp SQT    &trans
+                             &trans     &trans     &trans          &trans    &trans    &trans
             >;
 
             label = "numbers";
         };
 
-        copy_paste {
-            bindings = <
-&trans  &trans  &trans   &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans   &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &ctrl_a  &copy   &paste  &kp LEFT_GUI    &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans  &trans  &trans          &trans  &trans  &trans
-            >;
-
-            label = "copy_paste";
-        };
-
         layer_select {
             bindings = <
-&none  &none  &none  &none  &none  &to 8    &none  &none   &none  &none  &none  &none
-&to 0  &none  &none  &none  &none  &to 7    &none  &none   &none  &none  &none  &none
-&none  &none  &none  &none  &none  &to 6    &none  &none   &none  &none  &none  &none
+&none  &none  &none  &none  &none  &to 7    &none  &none   &none  &none  &none  &none
+&to 0  &none  &none  &none  &none  &to 6    &none  &none   &none  &none  &none  &none
+&none  &none  &none  &none  &none  &to 5    &none  &none   &none  &none  &none  &none
                      &none  &none  &none    &to 0  &trans  &none
             >;
 
@@ -249,7 +244,7 @@
 &kp TAB    &kp GRAVE         &kp Q  &kp W  &kp E           &kp R        &trans  &trans  &trans  &trans  &trans  &trans
 &kp ESC    &kp G             &kp A  &kp S  &kp D           &kp F        &trans  &trans  &trans  &trans  &trans  &trans
 &kp LSHFT  &kp LEFT_CONTROL  &kp Z  &kp X  &kp C           &kp V        &trans  &trans  &trans  &trans  &trans  &trans
-                                    &none  &lt 9 LEFT_ALT  &kp SPACE    &to 0   &trans  &trans
+                                    &none  &lt 8 LEFT_ALT  &kp SPACE    &to 0   &trans  &trans
             >;
 
             label = "gaming";
@@ -261,7 +256,7 @@
 &kp TAB    &kp GRAVE         &kp Q  &kp W  &kp E         &kp R          &trans  &trans  &trans  &trans  &trans  &trans
 &kp ESC    &kp G             &kp A  &kp S  &kp D         &kp F          &trans  &trans  &trans  &trans  &trans  &trans
 &kp LSHFT  &kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V          &trans  &trans  &trans  &trans  &trans  &trans
-                                    &none  &kp LEFT_ALT  &lt 9 SPACE    &to 0   &trans  &trans
+                                    &none  &kp LEFT_ALT  &lt 8 SPACE    &to 0   &trans  &trans
             >;
         };
 
@@ -277,5 +272,3 @@
         };
     };
 };
-
-
