@@ -160,7 +160,7 @@
 
         lgui_combo {
             bindings = <&kp LEFT_GUI>;
-            key-positions = <38>;
+            key-positions = <38 29>;
             layers = <0>;
         };
 
@@ -302,4 +302,3 @@
         };
     };
 };
-
