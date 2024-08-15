@@ -154,13 +154,13 @@
         compatible = "zmk,combos";
 
         layer_select_combo {
-            bindings = <&to 4>;
+            bindings = <&to 5>;
             key-positions = <24 35>;
         };
 
         lgui_combo {
             bindings = <&kp LEFT_GUI>;
-            key-positions = <38 29>;
+            key-positions = <38>;
             layers = <0>;
         };
 
@@ -207,10 +207,10 @@
 
             display-name = "base";
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E  &kp R         &kp T          &kp Y                   &kp U             &kp I         &kp O    &kp P     &kp BSPC
-&kp ESCAPE      &kp A  &kp S  &kp D  &kp F         &kp G          &kp H                   &kp J             &kp K         &kp L    &kp SEMI  &kp ENTER
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C  &kp V         &kp B          &kp N                   &kp M             &kp COMMA     &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                              &none  &kp LEFT_ALT  &lt 3 SPACE    &peek_toggle_layer 1 2  &kp LEFT_CONTROL  &kp LEFT_GUI
+&kp TAB         &kp Q  &kp W  &kp E  &kp R         &kp T          &kp Y        &kp U             &kp I         &kp O    &kp P     &kp BSPC
+&kp ESCAPE      &kp A  &kp S  &kp D  &kp F         &kp G          &kp H        &kp J             &kp K         &kp L    &kp SEMI  &kp ENTER
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C  &kp V         &kp B          &kp N        &kp M             &kp COMMA     &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+                              &none  &kp LEFT_ALT  &lt 2 SPACE    &lt 1 SPACE  &kp LEFT_CONTROL  &kp LEFT_GUI
             >;
         };
 
@@ -225,17 +225,6 @@
             label = "arrows";
         };
 
-        fn_keys {
-            bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&to 0   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
-                        &trans  &trans  &trans    &to 0   &trans  &trans
-            >;
-
-            label = "fn_keys";
-        };
-
         numbers {
             bindings = <
 &trans  &super_1  &super_2   &super_3   &super_4   &super_5        &kp LBKT  &kp RBKT  &kp GRAVE  &kp MINUS  &kp EQUAL  &trans
@@ -247,10 +236,21 @@
             label = "numbers";
         };
 
+        fn_keys {
+            bindings = <
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&to 0   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
+                        &trans  &trans  &trans    &to 0   &trans  &trans
+            >;
+
+            label = "fn_keys";
+        };
+
         layer_select {
             bindings = <
 &none  &none  &none  &none  &none  &to 7    &none  &none   &none  &none  &none  &none
-&to 0  &none  &none  &none  &none  &to 6    &none  &none   &none  &none  &none  &none
+&to 0  &none  &none  &none  &to 3  &to 6    &none  &none   &none  &none  &none  &none
 &none  &none  &none  &none  &none  &to 5    &none  &none   &none  &none  &none  &none
                      &none  &none  &none    &to 0  &trans  &none
             >;
