@@ -158,40 +158,9 @@
             key-positions = <24 35>;
         };
 
-        lgui_combo {
-            bindings = <&kp LEFT_GUI>;
-            key-positions = <38 29>;
-            layers = <0>;
-        };
-
-        super_1_combo {
-            bindings = <&super_1>;
-            key-positions = <38 1>;
-            layers = <0>;
-        };
-
-        super_2_combo {
-            bindings = <&super_2>;
-            key-positions = <38 2>;
-            layers = <0>;
-        };
-
-        super_3_combo {
-            bindings = <&super_3>;
-            key-positions = <38 3>;
-            layers = <0>;
-        };
-
-        super_4_combo {
-            bindings = <&super_4>;
-            key-positions = <38 4>;
-            layers = <0>;
-        };
-
-        super_5_combo {
-            bindings = <&super_5>;
-            key-positions = <38 5>;
-            layers = <0>;
+        underscore {
+            bindings = <&kp UNDER>;
+            key-positions = <8 9>;
         };
     };
 
