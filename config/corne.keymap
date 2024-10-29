@@ -160,7 +160,7 @@
 
         underscore {
             bindings = <&kp UNDER>;
-            key-positions = <8 9>;
+            key-positions = <8 9 7>;
         };
     };
 
