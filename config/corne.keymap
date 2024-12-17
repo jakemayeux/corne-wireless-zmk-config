@@ -185,7 +185,7 @@
 
         arrows {
             bindings = <
-&trans  &kp EQUAL         &kp MINUS  &kp GRAVE  &trans        &trans          &trans  &trans    &kp GRAVE  &kp MINUS  &kp EQUAL  &kp DELETE
+&trans  &kp EQUAL         &kp MINUS  &kp GRAVE  &kp APOS      &trans          &trans  &kp APOS  &kp GRAVE  &kp MINUS  &kp EQUAL  &kp DELETE
 &trans  &trans            &trans     &trans     &trans        &trans          &trans  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
 &trans  &kp LEFT_CONTROL  &kp LALT   &kp LSHFT  &kp LEFT_GUI  &kp LEFT_GUI    &trans  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans
                                      &trans     &trans        &trans          &trans  &trans    &trans
